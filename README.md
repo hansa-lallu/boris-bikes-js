@@ -67,3 +67,8 @@ I'd like vans to collect working bikes from garages and distribute them to docki
 
 - Javascript
 - Jasmine 
+
+## Progress
+
+- In progress - first 9 user stories completed 
+- Would like to add user interface possibly with react 
