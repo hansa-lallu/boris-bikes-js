@@ -5,4 +5,9 @@ describe('Bike', () => {
     const bike = new Bike();
     expect(bike.isWorking()).toEqual(true);
   });
+
+  it('can be reported broken', () => {
+    const bike = new Bike();
+    expect(bike.reportBroken()).toEqual(true)
+  });
 });
