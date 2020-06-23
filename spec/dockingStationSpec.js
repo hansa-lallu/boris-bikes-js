@@ -5,4 +5,9 @@ describe('DockingStation', () => {
     const dockingStation = new DockingStation();
     expect(dockingStation.releaseBike()).toEqual('Bike');
   });
+
+  it('can dock a bike', () => {
+    const dockingStation = new DockingStation(); 
+    expect(dockingStation.dockBike()).toEqual(true)
+  })
 }); 
