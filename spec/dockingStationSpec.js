@@ -1,13 +1,23 @@
 const { DockingStation } = require('../src/dockingStation')
 
+let dockingStation
+
 describe('DockingStation', () => {
+
+  beforeAll(() => {
+    dockingStation = new DockingStation();
+  });
+
   it('can release a bike from a docking station', () => {
-    const dockingStation = new DockingStation();
     expect(dockingStation.releaseBike()).toEqual('Bike');
   });
 
   it('can dock a bike', () => {
-    const dockingStation = new DockingStation(); 
     expect(dockingStation.dockBike()).toEqual(true)
+  })
+
+  it('has a bike docked', () => {
+    dockingStation = new DockingStation('Bike');
+    expect(dockingStation.bikes).toEqual(['Bike'])
   })
 }); 
