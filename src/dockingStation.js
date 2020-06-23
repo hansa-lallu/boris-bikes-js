@@ -14,7 +14,12 @@ class DockingStation {
   };
 
   dockBike() {
-    return true;
+    if(this.bikes.length === this.capacity) {
+      throw new Error('No space to dock Bike') 
+    } else {
+      this.bikes.push('Bike');
+      return 'Your Bike has been docked'
+    }
   }
 };
 
