@@ -4,7 +4,12 @@ class DockingStation {
   }
   
   releaseBike() {
-    return 'Bike'
+    if (this.bikes.length === 0) { 
+      return 'No Bikes Available' 
+    } else {
+    this.bikes.pop()
+      return 'Here is your Bike'
+    };
   };
 
   dockBike() {

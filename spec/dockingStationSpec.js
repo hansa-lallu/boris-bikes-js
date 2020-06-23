@@ -9,15 +9,20 @@ describe('DockingStation', () => {
   });
 
   it('can release a bike from a docking station', () => {
-    expect(dockingStation.releaseBike()).toEqual('Bike');
+    expect(dockingStation.releaseBike()).toEqual('Here is your Bike');
   });
 
   it('can dock a bike', () => {
     expect(dockingStation.dockBike()).toEqual(true)
-  })
+  });
 
   it('has a bike docked', () => {
     dockingStation = new DockingStation('Bike');
     expect(dockingStation.bikes).toEqual(['Bike'])
-  })
+  });
+
+  it('does not release a bike if no bike is available', () => {
+    dockingStation.releaseBike();
+    expect(dockingStation.releaseBike()).toEqual('No Bikes Available')
+  });
 }); 
