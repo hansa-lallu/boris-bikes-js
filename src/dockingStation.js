@@ -2,7 +2,7 @@ class DockingStation {
   constructor(name) {
     this.bikes = [name]
     this.capacity = 20 
-  }
+  };
   
   releaseBike() {
     if (this.bikes.length === 0) { 
@@ -19,8 +19,8 @@ class DockingStation {
     } else {
       this.bikes.push('Bike');
       return 'Your Bike has been docked'
-    }
-  }
+    };
+  };
 };
 
 module.exports = { DockingStation }
