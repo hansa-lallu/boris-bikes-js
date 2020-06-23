@@ -1,7 +1,7 @@
 class DockingStation {
-  constructor() {
+  constructor(capacity) {
     this.bikes = []
-    this.capacity = 20 
+    this.capacity = capacity ? capacity : 20
   };
   
   releaseBike() {
@@ -15,7 +15,7 @@ class DockingStation {
 
   dockBike() {
     if(this.bikes.length === this.capacity) {
-      throw new Error('No space to dock Bike') 
+      throw new Error('Docking Station is Full. No space to dock Bike') 
     } else {
       this.bikes.push('Bike');
       return 'Your Bike has been docked'
