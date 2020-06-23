@@ -1,6 +1,7 @@
 class DockingStation {
   constructor(name) {
     this.bikes = [name]
+    this.capacity = 20 
   }
   
   releaseBike() {

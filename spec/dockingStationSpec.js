@@ -25,4 +25,8 @@ describe('DockingStation', () => {
     dockingStation.releaseBike();
     expect(dockingStation.releaseBike()).toEqual('No Bikes Available')
   });
+
+  it('has a default capacity', () => {
+    expect(dockingStation.capacity).toEqual(20)
+  });
 }); 
