@@ -1,11 +1,10 @@
 class Bike {
-
-  isWorking() {
-    return true
+  constructor(isWorking = true) {
+    this._isWorking = isWorking;
   }
 
-  reportBroken() {
-    return true
+  isBroken() {
+    return !this._isWorking;
   }
 }
 
