@@ -64,6 +64,6 @@ describe('DockingStation', () => {
       dockingStation.dockBike(brokenBike);
 
       expect(dockingStation.bikes).toEqual([workingBike, brokenBike]);
-    })
+    });
   });
 }); 

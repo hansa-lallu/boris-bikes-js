@@ -72,5 +72,5 @@ I'd like vans to collect working bikes from garages and distribute them to docki
 
 ## Progress
 
-- In progress - first 10 user stories completed 
+- In progress - first 11 user stories completed 
 - Would like to add user interface possibly with react 
